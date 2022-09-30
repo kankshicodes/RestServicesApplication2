@@ -83,14 +83,14 @@ public class BookController {
 		return this.bookService.updateBookDetails(book);
 	}
 
-	@DeleteMapping("/books/{bookcode}")
-	public ResponseEntity<HttpStatus> deleteBook(@PathVariable int bookcode) {
-		System.out.println("bookcode"+bookcode);
-		try {
-			this.bookService.deleteBook(bookcode);
-			return new ResponseEntity<>(HttpStatus.OK);
-		} catch (Exception e) {
-			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-	}
+// 	@DeleteMapping("/books/{bookcode}")
+// 	public ResponseEntity<HttpStatus> deleteBook(@PathVariable int bookcode) {
+// 		System.out.println("bookcode"+bookcode);
+// 		try {
+// 			this.bookService.deleteBook(bookcode);
+// 			return new ResponseEntity<>(HttpStatus.OK);
+// 		} catch (Exception e) {
+// 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+// 		}
+// 	}
 }
